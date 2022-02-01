@@ -43,8 +43,7 @@ gbPlusBtn.addEventListener('click', function() {
     // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
     gb += 1
     gbValue.textContent = gb
-    total = gb + cc + ss
-    totalValue.textContent = total
+    calcTotal()
 })
 
 gbMinusBtn.addEventListener('click', function() {
@@ -52,12 +51,11 @@ gbMinusBtn.addEventListener('click', function() {
     console.log('Gingerbread - button was clicked!')
     // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
     if (gb == 0)
-        gb == 0
+        gb = 0
     else
         gb -= 1
     gbValue.textContent = gb
-    total = gb + cc + ss
-    totalValue.textContent = total
+    calcTotal()
 })
 
 ccPlusBtn.addEventListener('click', function() {
@@ -66,8 +64,7 @@ ccPlusBtn.addEventListener('click', function() {
     // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
     cc += 1
     ccValue.textContent = cc
-    total = gb + cc + ss
-    totalValue.textContent = total
+    calcTotal()
 })
 
 ccMinusBtn.addEventListener('click', function() {
@@ -75,12 +72,11 @@ ccMinusBtn.addEventListener('click', function() {
     console.log('Choco chip - button was clicked!')
     // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
     if (cc == 0)
-        cc == 0
+        cc = 0
     else
         cc -= 1
     ccValue.textContent = cc
-    total = gb + cc + ss
-    totalValue.textContent = total
+    calcTotal()
 })
 
 ssPlusBtn.addEventListener('click', function() {
@@ -89,8 +85,7 @@ ssPlusBtn.addEventListener('click', function() {
     // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
     ss += 1
     ssValue.textContent = ss
-    total = gb + cc + ss
-    totalValue.textContent = total
+    calcTotal()
 })
 
 ssMinusBtn.addEventListener('click', function() {
@@ -98,12 +93,15 @@ ssMinusBtn.addEventListener('click', function() {
     console.log('Sugar sprinkle - button was clicked!')
     // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
     if (ss == 0)
-        ss == 0
+        ss = 0
     else
         ss -= 1
     ssValue.textContent = ss
-    total = gb + cc + ss
-    totalValue.textContent = total
+    calcTotal()
 })
 
+function calcTotal(){
+    total = gb + cc + ss
+    totalValue.textContent = total
+}
 // TODO: Hook up event listeners for the rest of the buttons
